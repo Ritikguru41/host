@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://logos-download.com/wp-content/uploads/2016/03/Instagram_Logo_2016.png" alt="Instagram Logo">
+    </div>
+    <div class="actions">
+      <button id="logoutBtn">Log Out</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="form-box">
+      <h2><strong>Create A Strong Password</strong></h2>
+      <p>Your password must be at least 6 characters and should include a combination of numbers, letters and special characters ($@%).</p>
+      <form id="passwordForm">
+        <input type="password" name="currentPassword" placeholder="Current password" required>
+        <input type="password" name="newPassword" placeholder="New password" required>
+
+        <div class="show-password">
+          <input type="checkbox" id="showPasswordToggle">
+          <label for="showPasswordToggle">Show Passwords</label>
+        </div>
+
+        <button type="submit">Reset Password</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup" id="popupMessage">
+    ✅ Password reset successfully!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
