@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const path = require('path');
-const Password = require('./models/Password');
+const Password = require('Password');
 
 dotenv.config();
 const app = express();
