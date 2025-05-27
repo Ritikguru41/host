@@ -136,9 +136,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
+
 
   .form-box {
     padding: 30px 20px;
