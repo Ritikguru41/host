@@ -21,7 +21,7 @@ mongoose.connect(`mongodb+srv://instaclone:clone69@cluster0.fq7ujpu.mongodb.net/
 
 // Serve index.html on root route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.post('/change-password', async (req, res) => {
