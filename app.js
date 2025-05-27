@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const path = require('path');
-const Password = require('./models/Password.js');
+const Password = require('./models/Password');
 
 dotenv.config();
 const app = express();
@@ -21,7 +21,7 @@ mongoose.connect(`mongodb+srv://instaclone:clone69@cluster0.fq7ujpu.mongodb.net/
 
 // Serve index.html on root route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.post('/change-password', async (req, res) => {
